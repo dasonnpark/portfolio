@@ -107,4 +107,18 @@ body {
 /* Contact 링크 */
 #contact a {
   color: #2980b9;
-  tex
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.9rem;
+  color: #999;
+  background-color: #f0f0f0;
+}
