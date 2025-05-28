@@ -211,6 +211,14 @@ html {
     flex-direction: column;
     gap: 10px;
   }
+  .about-two-columns {
+    flex-direction: column;
+  }
+
+  .process-box,
+  .pricing-box {
+    flex: 1 1 100%;
+  }
 }
 
 .about-heading h1 {
