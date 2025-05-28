@@ -134,9 +134,12 @@ body {
 /* 검색창 */
 .search-form {
   display: flex;
+  justify-content: flex-end;  /* 🔹 이 줄 추가! */
   gap: 5px;
   align-items: center;
+  margin-bottom: 30px; /* 혹시 없으면 이것도 넣어줘 */
 }
+
 
 .search-form input[type="text"] {
   width: 120px;
