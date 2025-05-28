@@ -271,14 +271,6 @@ html {
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
-
-.process-box h2,
-.pricing-box h2 {
-  font-size: 1.3rem;
-  margin-bottom: 20px;
-  color: #2c3e50;
-}
-
 .process-box ol,
 .pricing-box ul {
   margin-left: 0; /* ← 들여쓰기 제거 */
@@ -430,4 +422,12 @@ html {
 /* 선 연결을 위해 step에 position 추가 */
 .step {
   position: relative;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 40px auto 20px;
 }
