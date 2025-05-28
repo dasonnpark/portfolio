@@ -29,6 +29,7 @@ body {
   font-weight: bold;
   font-size: 1.5rem;
   color: #2c3e50;
+  text-decoration: none; /* 밑줄 제거 */
 }
 
 /* 🔸 오른쪽 전체 묶음 */
