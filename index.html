@@ -130,7 +130,7 @@
 
   <!-- 👉 버튼 추가 -->
   <div class="contact-buttons">
-  <a href="#" class="btn" onclick="openEmailPopup()">이메일 문의하기</a>
+  <a href="javascript:void(0)" class="btn" onclick="openEmailModal()">이메일 문의하기</a>
   <a href="카카오링크" class="btn">카카오톡 문의하기</a>
   <a href="인스타링크" class="btn">인스타그램 바로가기</a>
 </div>
@@ -227,7 +227,13 @@ document.querySelectorAll('.nav-links a, .logo').forEach(link => {
     noResultsMessage.style.display = 'none';
   }
 });
+function openEmailModal() {
+  document.getElementById('emailModal').style.display = 'block';
+}
 
+function closeEmailModal() {
+  document.getElementById('emailModal').style.display = 'none';
+}
 </script>
 
 <div id="emailModal" class="modal">
