@@ -58,6 +58,9 @@
         <p>간단한 설명 텍스트</p>
       </div>
     </div>
+    <p id="noResults" style="display: none; color: #999; margin-top: 20px;">
+    검색 결과가 없습니다.
+  </p>
   </section>
 
   <!-- About 섹션 -->
@@ -113,22 +116,32 @@
   });
     
       document.getElementById('searchForm').addEventListener('submit', function (e) {
-    e.preventDefault();
+  e.preventDefault();
 
-    const query = document.getElementById('searchInput').value.toLowerCase();
-    showSection('work');
+  const query = document.getElementById('searchInput').value.toLowerCase();
+  showSection('work');
 
-    const projects = document.querySelectorAll('#work .project');
+  const projects = document.querySelectorAll('#work .project');
+  let matchCount = 0;
 
-    projects.forEach(project => {
-      const text = project.textContent.toLowerCase();
-      if (text.includes(query)) {
-        project.style.display = 'block';
-      } else {
-        project.style.display = 'none';
-      }
-    });
+  projects.forEach(project => {
+    const text = project.textContent.toLowerCase();
+    if (text.includes(query)) {
+      project.style.display = 'block';
+      matchCount++;
+    } else {
+      project.style.display = 'none';
+    }
   });
+
+  // ✅ 검색 결과 없을 때 문구 표시
+  const noResultsMessage = document.getElementById('noResults');
+  if (matchCount === 0) {
+    noResultsMessage.style.display = 'block';
+  } else {
+    noResultsMessage.style.display = 'none';
+  }
+});
 
 </script>
 
