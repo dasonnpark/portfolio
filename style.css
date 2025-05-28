@@ -23,6 +23,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
+  gap: 20px;
 }
 
 .logo {
@@ -35,6 +36,7 @@ body {
   list-style: none;
   display: flex;
   gap: 30px;
+  margin-right: auto; /* 로고 다음 → nav-links → search-form 순 정렬 */
 }
 
 .nav-links a {
@@ -117,22 +119,21 @@ body {
 /* Search 폼 */
 .search-form {
   display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 20px;
+  gap: 5px;
+  align-items: center;
 }
 
 .search-form input[type="text"] {
-  padding: 10px;
-  width: 300px;
-  font-size: 16px;
+  width: 120px; /* ✅ 크기 줄이기 */
+  padding: 6px 10px;
+  font-size: 14px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
 .search-form button {
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 6px 10px;
+  font-size: 14px;
   background-color: #2c3e50;
   color: white;
   border: none;
