@@ -56,6 +56,9 @@ body {
   color: #000;
 }
 
+.nav-links a[href="#contact"] {
+  font-weight: 700; /* 두껍게 */
+}
 
 /* 메인 소개 */
 .hero {
