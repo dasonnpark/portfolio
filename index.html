@@ -91,21 +91,20 @@
   });
 
   // 내비게이션 클릭 시 해당 섹션 보여주기
-  document.querySelectorAll('.nav-links a').forEach(link => {
+document.querySelectorAll('.nav-links a, .logo').forEach(link => {
   link.addEventListener('click', function (e) {
     e.preventDefault();
     const target = this.getAttribute('href').replace('#', '');
     showSection(target);
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
-    // ✅ Work를 눌렀을 때 모든 프로젝트 다시 보여주기
+    // Work일 때 프로젝트 전체 보여주기
     if (target === 'work') {
       const projects = document.querySelectorAll('#work .project');
       projects.forEach(project => {
         project.style.display = 'block';
       });
 
-      // ✅ "검색 결과 없음" 메시지도 숨기기
       const noResultsMessage = document.getElementById('noResults');
       if (noResultsMessage) {
         noResultsMessage.style.display = 'none';
@@ -113,7 +112,6 @@
     }
   });
 });
-
     
       document.getElementById('searchForm').addEventListener('submit', function (e) {
   e.preventDefault();
