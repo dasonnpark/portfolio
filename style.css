@@ -16,14 +16,13 @@ body {
 .navbar {
   background-color: #ffffff;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* 로고 왼쪽, 나머지 오른쪽 */
   align-items: center;
   padding: 20px 40px;
   border-bottom: 1px solid #e0e0e0;
   position: sticky;
   top: 0;
   z-index: 1000;
-  gap: 20px;
 }
 
 .logo {
@@ -32,11 +31,18 @@ body {
   color: #2c3e50;
 }
 
+/* 🔸 오른쪽 전체 묶음 */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* 메뉴 */
 .nav-links {
   list-style: none;
   display: flex;
   gap: 30px;
-  margin-right: auto; /* 로고 다음 → nav-links → search-form 순 정렬 */
 }
 
 .nav-links a {
@@ -48,6 +54,7 @@ body {
 .nav-links a:hover {
   color: #000;
 }
+
 
 /* 메인 소개 */
 .hero {
@@ -116,7 +123,7 @@ body {
   text-decoration: underline;
 }
 
-/* Search 폼 */
+/* 검색창 */
 .search-form {
   display: flex;
   gap: 5px;
@@ -124,7 +131,7 @@ body {
 }
 
 .search-form input[type="text"] {
-  width: 120px; /* ✅ 크기 줄이기 */
+  width: 120px;
   padding: 6px 10px;
   font-size: 14px;
   border: 1px solid #ccc;
