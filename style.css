@@ -309,7 +309,6 @@ html {
 .btn:hover {
   background-color: #1a242f;
 }
-
 .price-list {
   list-style: none;
   padding: 0;
@@ -319,15 +318,24 @@ html {
 .price-list li {
   display: flex;
   justify-content: space-between;
-  padding: 4px 0;
+  align-items: flex-start;
+  padding: 6px 0;
   font-size: 1rem;
   color: #444;
+  gap: 20px;
 }
 
 .price-list .item {
-  font-weight: bold;
+  flex: 1;
+  font-weight: 400;
+}
+
+.price-list .item strong {
+  font-weight: 700;
 }
 
 .price-list .price {
+  white-space: nowrap;
+  font-weight: 500;
   color: #000;
 }
