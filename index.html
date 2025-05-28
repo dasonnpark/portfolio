@@ -17,7 +17,7 @@
     <ul class="nav-links">
       <li><a href="#work">Work</a></li>
       <li><a href="#about">About us</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://open.kakao.com/o/s0bOuivh" target="_blank" rel="noopener noreferrer">Contact</a></li>
     </ul>
   </div>
 </nav>
@@ -156,8 +156,13 @@
   // 내비게이션 클릭 시 해당 섹션 보여주기
 document.querySelectorAll('.nav-links a, .logo').forEach(link => {
   link.addEventListener('click', function (e) {
+    const href = this.getAttribute('href');
+    
+    // 외부 링크일 경우에는 스크립트 무시하고 기본 동작 수행
+    if (href.startsWith('http')) return;
+
     e.preventDefault();
-    const target = this.getAttribute('href').replace('#', '');
+    const target = href.replace('#', '');
     showSection(target);
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
