@@ -239,14 +239,22 @@ html {
   flex-wrap: wrap;
 }
 
-.process-box,
-.pricing-box {
-  flex: 1 1 45%;
+.process-box {
+  flex: 1 1 35%;
   background-color: #fff;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
+
+.pricing-box {
+  flex: 1 1 60%;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
 
 .process-box h2,
 .pricing-box h2 {
