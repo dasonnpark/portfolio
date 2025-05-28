@@ -131,7 +131,8 @@ body {
 }
 
 .search-form input[type="text"] {
-  width: 180px;
+  width: 120px;
+  height: 34px; /* ✅ 버튼과 동일하게 */
   padding: 6px 10px;
   font-size: 14px;
   border: 1px solid #ccc;
@@ -141,11 +142,15 @@ body {
 .search-form button {
   padding: 6px 10px;
   font-size: 14px;
+  height: 34px; /* ✅ input과 높이 맞춤 */
   background-color: #2c3e50;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  display: flex;
+  align-items: center; /* 아이콘 수직 정렬 */
+  justify-content: center;
 }
 
 .search-form button:hover {
