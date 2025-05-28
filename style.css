@@ -263,12 +263,12 @@ html {
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
-.pricing-box {
-  flex: 1 1 60%;
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+.pricing-box ul {
+  margin-left: 0; /* ← 들여쓰기 제거 */
+  padding-left: 0; /* ← 혹시 기본 패딩도 제거 */
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #444;
 }
 
 
