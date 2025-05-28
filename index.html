@@ -81,5 +81,41 @@
     <p>© 2025 Park Da-som. All rights reserved.</p>
   </footer>
 
+  <script>
+  // 모든 섹션 ID를 배열로 정의
+  const sections = ['work', 'about', 'contact', 'search'];
+
+  // 모든 섹션을 숨기는 함수
+  function hideAllSections() {
+    sections.forEach(id => {
+      const section = document.getElementById(id);
+      if (section) section.classList.add('hidden');
+    });
+  }
+
+  // 특정 섹션만 보이도록 설정
+  function showSection(id) {
+    hideAllSections();
+    const section = document.getElementById(id);
+    if (section) section.classList.remove('hidden');
+  }
+
+  // 최초 로딩 시 About만 보이게
+  document.addEventListener('DOMContentLoaded', function () {
+    showSection('about');
+  });
+
+  // 내비게이션 클릭 시 해당 섹션 보여주기
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = this.getAttribute('href').replace('#', '');
+      showSection(target);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+</script>
+
+  
 </body>
 </html>
