@@ -92,9 +92,6 @@ body {
   padding-bottom: 5px;
 }
 
-.section h2 {
-  display: none;
-}
 
 .projects {
   display: flex;
