@@ -235,3 +235,34 @@ html {
   margin: 0 auto;
 }
 
+.about-two-columns {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  margin: 60px auto;
+  flex-wrap: wrap;
+}
+
+.process-box,
+.pricing-box {
+  flex: 1 1 45%;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.process-box h2,
+.pricing-box h2 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.process-box ol,
+.pricing-box ul {
+  margin-left: 20px;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #444;
+}
