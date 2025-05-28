@@ -458,6 +458,12 @@ html {
   line-height: 1.5;
 }
 
+#emailModal ul {
+  list-style: none;      /* 특수문자 제거 */
+  padding-left: 0;       /* 들여쓰기 제거 */
+  margin-left: 0;
+}
+
 /* 🔹 닫기 버튼 */
 .close {
   color: #aaa;
