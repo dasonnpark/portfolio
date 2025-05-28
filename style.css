@@ -131,7 +131,7 @@ body {
 }
 
 .search-form input[type="text"] {
-  width: 120px;
+  width: 180px;
   padding: 6px 10px;
   font-size: 14px;
   border: 1px solid #ccc;
