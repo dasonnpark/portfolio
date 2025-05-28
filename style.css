@@ -309,3 +309,25 @@ html {
 .btn:hover {
   background-color: #1a242f;
 }
+
+.price-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.price-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+.price-list .item {
+  font-weight: bold;
+}
+
+.price-list .price {
+  color: #000;
+}
