@@ -124,6 +124,14 @@ body {
   text-decoration: underline;
 }
 
+.contact-info {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
+}
+
 /* 검색창 */
 .search-form {
   display: flex;
