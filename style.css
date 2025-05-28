@@ -185,3 +185,36 @@ html {
   scroll-behavior: smooth;
 }
 
+/* 모바일 반응형: 화면 너비가 768px 이하일 때 적용 */
+@media (max-width: 768px) {
+  .section {
+    padding: 30px 15px; /* 좌우 여백 줄이기 */
+  }
+
+  .navbar {
+    flex-direction: column; /* 상단 메뉴 세로 배치 */
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .projects {
+    flex-direction: column; /* 카드 한 줄에 하나씩 */
+  }
+
+  .project {
+    flex: 1 1 100%;
+  }
+
+  .search-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
