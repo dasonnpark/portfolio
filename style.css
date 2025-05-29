@@ -400,8 +400,8 @@ html {
   content: "";
   position: absolute;
   top: 50%; /* 부모(.step)의 세로 가운데 위치 */
+  left: 100%; /* 부모의 오른쪽 끝에서 연결선 시작 */
   transform: translateY(-50%); /* 선 자체 높이만큼 위로 보정 */
-  right: -30px;
   width: 60px;
   height: 2px;
   background-color: #bbb;
