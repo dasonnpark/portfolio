@@ -399,7 +399,8 @@ html {
 .step:not(:nth-child(3n)):after {
   content: "";
   position: absolute;
-  top: 30px;
+  top: 50%; /* 부모(.step)의 세로 가운데 위치 */
+  transform: translateY(-50%); /* 선 자체 높이만큼 위로 보정 */
   right: -30px;
   width: 60px;
   height: 2px;
