@@ -381,7 +381,7 @@ html {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;  /* 원을 중앙에 정렬 */
+  align-items: center;
   width: 33.333%; /* 3등분하여 균등하게 배치 */
   opacity: 0;
   transform: translateY(20px);
@@ -394,6 +394,7 @@ html {
 .step:nth-child(4) { animation-delay: 0.4s; }
 .step:nth-child(5) { animation-delay: 0.5s; }
 .step:nth-child(6) { animation-delay: 0.6s; }
+
 
 @keyframes fadeUp {
   to {
@@ -440,6 +441,11 @@ html {
   opacity: 0;
   animation: drawLine 1s ease forwards;
   animation-delay: 0.6s;
+}
+
+.step .circle {
+  position: relative;
+  z-index: 2; /* 원이 선 위로 올 수 있도록 */
 }
 
 /* 선 애니메이션 */
