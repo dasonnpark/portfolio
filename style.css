@@ -400,8 +400,8 @@ html {
   content: "";
   position: absolute;
   top: 50%; /* 부모(.step)의 세로 가운데 위치 */
-  left: 50%; /* 부모의 가로 가운데에서 시작 */
-  transform: translate(-50%, -50%); /* 수평, 수직 중앙 정렬 */
+  left: calc(100% + 10px); /* 100%로 가서 10px 여백을 추가 */
+  transform: translateY(-50%); /* 수직 중앙 정렬 */
   width: 60px;
   height: 2px;
   background-color: #bbb;
