@@ -82,7 +82,7 @@ body {
 
 .section h2 {
   font-size: 1rem;
-  margin-bottom: 5px;
+  margin-bottom: 25px;
   color: #2c3e50;
   border-bottom: 0px solid #2c3e50;
   padding-bottom: 5px;
@@ -438,7 +438,7 @@ html {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 0px;
   text-align: center;
 }
 
@@ -450,11 +450,11 @@ html {
 }
 
 .step-new .circle-new {
-  width: 80px;
-  height: 80px;
+  width: 150px;
+  height: 150px;
   background-color: #4a75f2;
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 1.0rem;
   font-weight: 700;
   border-radius: 50%;
   display: flex;
