@@ -367,16 +367,18 @@ html {
 
 .process-flow {
   display: flex;
-  justify-content: flex-start;
-  gap: 40px;
-  overflow-x: auto;
-  padding-bottom: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px 60px;
+  margin-top: 30px;
+  text-align: center;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .step {
-  width: auto;
-  min-width: 100px;
-  flex: 0 0 auto;
+  flex: 0 0 120px; /* 고정 너비로 카드 정렬 */
 }
 
 .step:nth-child(1) { animation-delay: 0.1s; }
@@ -421,19 +423,16 @@ html {
   white-space: nowrap;
 }
 
-/* 왼쪽에서 오른쪽으로 연결선 (한 줄에 3개씩) */
 .step:not(:nth-child(3n)):after {
   content: "";
   position: absolute;
-  top: 50%; /* 부모(.step)의 세로 가운데 위치 */
-  left: 100%; /* 원의 우측 끝에 선을 위치시킴 */
-  transform: translateY(-50%); /* 수직 중앙 정렬 */
-  width: 60px; /* 선 길이 */
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  width: 40px;
   height: 2px;
-  background-color: #bbb;
-  opacity: 0;
-  animation: drawLine 1s ease forwards;
-  animation-delay: 0.6s;
+  background-color: #ccc;
+  opacity: 1;
 }
 
 .step .circle {
